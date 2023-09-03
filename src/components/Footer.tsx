@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 
-const Footer = ({visibleFooter}) => {
+const Footer = ({visibleFooter}: any) => {
     return (
         <div>
             {visibleFooter &&

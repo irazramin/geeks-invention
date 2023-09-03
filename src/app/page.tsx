@@ -16,8 +16,8 @@ export default function Home() {
     const [visibleHeader, setVisibleHeader]: any = useState(false);
     const [visibleFooter, setVisibleFooter]: any = useState(false);
     const [visibleSection, setVisibleSection]: any = useState({fintech: false});
-    const [visiblity, setVisibility] = useState(false)
-    const listenScrollEvent = (event) => {
+    const [visiblity, setVisibility]: any = useState(false)
+    const listenScrollEvent = (event: any): any => {
         if (window.scrollY < window.innerHeight) {
             setVisibleHeader(true);
             setVisibleFooter(false)

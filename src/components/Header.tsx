@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 
-const Header = ({ visibleHeader }) => {
+const Header = ({ visibleHeader }: any) => {
     return (
         <div>
             {visibleHeader && <section
