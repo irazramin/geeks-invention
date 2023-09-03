@@ -17,7 +17,7 @@ export default function Home() {
     const [visibleFooter, setVisibleFooter]: any = useState(false);
     const [visibleSection, setVisibleSection]: any = useState({fintech: false});
     const [visiblity, setVisibility]: any = useState(false)
-    const listenScrollEvent = (event: any): any => {
+    const listenScrollEvent = (): any => {
         if (window.scrollY < window.innerHeight) {
             setVisibleHeader(true);
             setVisibleFooter(false)
@@ -33,6 +33,7 @@ export default function Home() {
 
 
     useEffect(() => {
+        listenScrollEvent();
         window.addEventListener('scroll', listenScrollEvent);
 
         return () => window.removeEventListener('scroll', listenScrollEvent);
@@ -62,7 +63,7 @@ export default function Home() {
             <Teams />
             <div className="lg:h-[1003px] md:h-0 w-full relative bg-[#16181c]"></div>
 
-            <Footer />
+            <Footer visibleFooter={visibleFooter} />
         </main>
     )
 }
