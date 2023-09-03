@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 
-const Iot = ({visibleSection}) => {
+const Iot = ({visibleSection}: any) => {
     return (
         <section id="iot"
                  className={`${visibleSection.fintech && 'bg-[#3f2caa]'} bg-[#01B5AC] transition-all duration-300  lg:h-screen `}>
