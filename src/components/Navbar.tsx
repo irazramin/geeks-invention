@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 const Navbar = () => {
     const [header, setHeader]: any = useState("header")
 
-    const listenScrollEvent = (event) => {
+    const listenScrollEvent = (event): any => {
         if (window.scrollY < window.innerHeight) {
             return setHeader("#000000")
         }
