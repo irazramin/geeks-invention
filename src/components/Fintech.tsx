@@ -4,7 +4,7 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const Fintech = ({ setVisibleSection }: any) => {
     return (
-        <VisibilitySensor onChange={(isVisible): any => setVisibleSection({fintech: isVisible})} offset={{top: 5}}
+        <VisibilitySensor onChange={(isVisible: any): any => setVisibleSection({fintech: isVisible})} offset={{top: 5}}
                           minTopValue={100} intervalCheck={true} scrollCheck={true}>
             <section id="fintech" className={`bg-[#3f2caa] transition-all duration-300 `}>
                 <div className="max-w-[1290px] mx-auto p-[20px] md:px-[40px] text-white">
